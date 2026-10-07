@@ -1,0 +1,20 @@
+data:
+  raw_path: '../data/raw/dataset_2.csv'
+  processed_path: '../data/processed/clean_data.csv'
+  test_size: 0.2
+  random_state: 42
+
+features:
+  numeric_cols: ['Area_SqFt', 'Rooms', 'Build_Age']
+  categorical_cols: ['Location', 'Street_Type', 'Furnishing', 'Property_Type', 'Has_Pool']
+  target: 'Price'
+
+model:
+  type:
+  hyperparameters:
+    learning_rate:
+    max_depth:
+    n_estimators:
+
+logging:
+  level: 'INFO'
